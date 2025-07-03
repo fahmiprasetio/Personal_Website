@@ -1,0 +1,102 @@
+const Projects = [
+  {
+    id: 1,
+    title: "Atap Nusantara",
+    description:
+      "A web platform that provides information about climbable mountains across Indonesia, tailored for hiking enthusiasts.",
+    video: "/projects/atap-nusantara.mp4",
+    tags: ["HTML", "CSS", "Javascript"],
+    demoUrl: "https://atapnusantarawebsite.vercel.app/",
+    githubUrl: "https://github.com/fahmiprasetio/Atap-Nusantara-Website",
+  },
+  {
+    id: 2,
+    title: "Tech Sentinel",
+    description:
+      "A recommendation platform that helps users compare and discover the best laptops, phones, and other tech products available to the public.",
+    video: "/projects/tech-sentinel.mp4",
+    tags: [
+      "ReactJS",
+      "TailwindCSS",
+      "Node.js",
+    ],
+    demoUrl: "http://tech-sentinel-website-review-tech.vercel.app",
+    githubUrl:
+      "https://github.com/fahmiprasetio/TechSentinel-Tech-Review-Website",
+  },
+  {
+    id: 3,
+    title: "Aksara Suara",
+    description:
+      "An online marketplace for booking tickets to cultural events across the Indonesian archipelago and purchasing traditional cultural accessories.",
+    video: "/projects/aksara-suara.mp4",
+    tags: ["HTML", "CSS", "Javascript", "PHP"],
+    demoUrl: "https://aksara-suara-oa4c.vercel.app/",
+    githubUrl: "https://github.com/fahmiprasetio/Aksara_Suara",
+  },
+];
+
+export const ProjectSection = () => {
+  return (
+    <section id="projects" className="py-24 px-4 relative">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Feature <span className="text-primary">Project</span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Here are some of my recent projects. Each project was carefully
+          crafted with attention to detail, performance, and user experience.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          {Projects.map((project, key) => (
+            <div
+              key={key}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover border "
+            >
+              <div className="h-48 overflow-hidden">
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="pl-6 py-4  ">
+                <div className="flex flex-wrap gap-2 ">
+                  {project.tags.map((tag) => (
+                    <span className="px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-secondary-foreground ">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold mb-3 text-left ml-8 text-glow">{project.title}</h3>
+              <p className="text-muted-foreground text-sm mb-10 text-justify mx-8">
+                {project.description}
+              </p>
+              {/* <div className="flex justify-between items-center">
+                <div className="flex space-x-3">
+                  <a
+                    href={project.demoUrl}
+                    className="text-foreground/80 hover:text-primary transition-colors duration"
+                  >
+                    <ExternalLink />
+                  </a>
+                  <a href={project.githubUrl}>
+                    <Github />
+                  </a>
+                </div>
+              </div> */}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
