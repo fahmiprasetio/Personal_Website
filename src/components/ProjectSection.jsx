@@ -1,3 +1,5 @@
+import { ExternalLink, Github } from "lucide-react";
+
 const Projects = [
   {
     id: 1,
@@ -15,11 +17,7 @@ const Projects = [
     description:
       "A recommendation platform that helps users compare and discover the best laptops, phones, and other tech products available to the public.",
     video: "/projects/tech-sentinel.mp4",
-    tags: [
-      "ReactJS",
-      "TailwindCSS",
-      "Node.js",
-    ],
+    tags: ["ReactJS", "TailwindCSS", "Node.js"],
     demoUrl: "http://tech-sentinel-website-review-tech.vercel.app",
     githubUrl:
       "https://github.com/fahmiprasetio/TechSentinel-Tech-Review-Website",
@@ -41,7 +39,7 @@ export const ProjectSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Feature <span className="text-primary">Project</span>
+          Website<span className="text-primary"> Project</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -53,7 +51,7 @@ export const ProjectSection = () => {
           {Projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover border "
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover border"
             >
               <div className="h-48 overflow-hidden">
                 <video
@@ -66,33 +64,40 @@ export const ProjectSection = () => {
                 />
               </div>
 
-              <div className="pl-6 py-4  ">
+              <div className="pl-7 py-4  ">
                 <div className="flex flex-wrap gap-2 ">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-secondary-foreground ">
+                    <span className="px-2 py-1 text-xs font-medium border rounded-md bg-primary/10 text-secondary-foreground ">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold mb-3 text-left ml-8 text-glow">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-10 text-justify mx-8">
+              <h3 className="text-xl font-semibold mb-3 text-left ml-8 text-glow">
+                {project.title}
+              </h3>
+              <p className="text-muted-foreground text-sm mb-5 text-justify mx-8">
                 {project.description}
               </p>
-              {/* <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center">
                 <div className="flex space-x-3">
                   <a
                     href={project.demoUrl}
-                    className="text-foreground/80 hover:text-primary transition-colors duration"
+                    target="_blank"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300 ml-8 mb-8 border-2 border-white/50 rounded-md p-1.5 hover:border-primary"
                   >
-                    <ExternalLink />
+                    <ExternalLink size={25} />
                   </a>
-                  <a href={project.githubUrl}>
-                    <Github />
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300  mb-8 border-2 border-white/50 rounded-md p-1.5 hover:border-primary"
+                  >
+                    <Github size={25} />
                   </a>
                 </div>
-              </div> */}
+              </div>
             </div>
           ))}
         </div>
