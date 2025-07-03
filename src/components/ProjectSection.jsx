@@ -42,9 +42,8 @@ export const ProjectSection = () => {
           Website<span className="text-primary"> Project</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          Here are some of my recent projects, thoughtfully built with a strong focus on performance, accessibility, and user experience. Each project not only showcases my progress in web development but also reflects my creativity and attention to visual detail.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">

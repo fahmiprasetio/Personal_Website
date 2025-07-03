@@ -12,9 +12,9 @@ export const AboutSection = () => {
           {/* Section kiri (gambar) */}
           <div className="relative w-full max-w-sm mx-auto lg:mr-28">
             {/* Card background */}
-            <div className="absolute inset-0 -rotate-3 bg-primary/70 rounded-xl shadow-lg z-0"></div>
+            <div className="absolute inset-0 -rotate-4  bg-primary/70 rounded-xl shadow-lg z-0"></div>
             {/* foto profile */}
-            <div className="relative z-10 overflow-hidden rounded-xl shadow-xl border border-border">
+            <div className="relative z-10 overflow-hidden rounded-xl shadow-xl border border ">
               <img
                 src={profileImage}
                 alt="Profile"
