@@ -36,7 +36,7 @@ const Projects = [
 
 export const ProjectSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="project" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Website<span className="text-primary"> Project</span>
