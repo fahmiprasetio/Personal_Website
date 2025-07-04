@@ -91,7 +91,7 @@ export const ProjectSection = () => {
                   <a
                     href={project.githubUrl}
                     target="_blank"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300  mb-8 border-2 border-white/50 rounded-md p-1.5 hover:border-primary"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300 mb-8 border-2 border-white/50 rounded-md p-1.5 hover:border-primary"
                   >
                     <Github size={25} />
                   </a>
