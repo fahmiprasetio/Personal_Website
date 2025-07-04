@@ -132,8 +132,8 @@ export const ExperienceSection = () => {
         </div>
 
         {/* Tech Stack */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold mb-4">Tech Stack</h3>
+        <div className="mt-20">
+          <h3 className="text-4xl font-bold mb-4">Tech <span className="text-primary">Stack</span></h3>
           <div className="flex flex-wrap mx-auto justify-center  gap-4">
             <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
               <img
@@ -153,19 +153,19 @@ export const ExperienceSection = () => {
             </span>
             <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
               <img
-                src="/projects/figma.svg"
-                alt="Figma"
+                src="/projects/mysql.svg"
+                alt="MySQL"
                 className="h-9 w-9 invert"
               />
-              Figma
+              MySQL
             </span>
             <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
               <img
-                src="/projects/photoshop.svg"
-                alt="Photoshop"
+                src="/projects/nodejs.svg"
+                alt="Node JS"
                 className="h-9 w-9 invert"
               />
-              Photoshop
+              NodeJS
             </span>
             <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
               <img
@@ -190,6 +190,22 @@ export const ExperienceSection = () => {
                 className="h-9 w-9 invert"
               />
               Git
+            </span>
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+              <img
+                src="/projects/vercel.svg"
+                alt="Vercel"
+                className="h-7 w-7 invert"
+              />
+              Vercel
+            </span>
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+              <img
+                src="/projects/bootstrap.svg"
+                alt="Bootstrap"
+                className="h-9 w-9 invert"
+              />
+              Bootstrap
             </span>
           </div>
         </div>

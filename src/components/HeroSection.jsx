@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -21,14 +21,33 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-md md:text-xl lg:text-xl text-muted-foreground max-w-6xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I craft high-performance web solutions using the latest
-            technologies. Focused on front-end engineering, I design responsive,
-            accessible, and intuitive interfaces that elevate user experience.
+            “I transform complex problems into simple, meaningful, and effective
+            web solutions, delivering clarity and impact through thoughtful,
+            user-centered design.”
           </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4 ">
-            <a href="#project" className="cosmic-button inline-block w-60">
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex items-center justify-center gap-3">
+            <a
+              href="#project"
+              className="cosmic-button rounded-xl py-3 hover:scale-102 inline-block w-60"
+            >
               View My Project
+            </a>
+            <a
+              href="https://github.com/fahmiprasetio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" cosmic-button transition duration-300 p-2 rounded-xl border-white"
+            >
+              <Github className="w-8 h-8" />
+            </a>
+            <a
+              href="https://linkedin.com/in/fahmiprasetio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" cosmic-button transition duration-300 p-2 rounded-xl border-white"
+            >
+              <Linkedin className="w-8 h-8" />
             </a>
           </div>
         </div>
