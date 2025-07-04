@@ -139,7 +139,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/reactjs.svg"
                 alt="React"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               React
             </span>
@@ -147,7 +147,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/tailwind.svg"
                 alt="Tailwind CSS"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               Tailwind CSS
             </span>
@@ -155,7 +155,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/mysql.svg"
                 alt="MySQL"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               MySQL
             </span>
@@ -163,7 +163,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/nodejs.svg"
                 alt="Node JS"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               NodeJS
             </span>
@@ -171,7 +171,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/javascript.svg"
                 alt="JavaScript"
-                className="h-7 w-7 invert"
+                className="h-7 w-7 icon-invert-dark"
               />
               JavaScript
             </span>
@@ -179,7 +179,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/github.svg"
                 alt="GitHub"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               GitHub
             </span>
@@ -187,7 +187,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/git.svg"
                 alt="Git"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               Git
             </span>
@@ -195,7 +195,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/vercel.svg"
                 alt="Vercel"
-                className="h-7 w-7 invert"
+                className="h-7 w-7 icon-invert-dark"
               />
               Vercel
             </span>
@@ -203,7 +203,7 @@ export const ExperienceSection = () => {
               <img
                 src="/projects/bootstrap.svg"
                 alt="Bootstrap"
-                className="h-9 w-9 invert"
+                className="h-9 w-9 icon-invert-dark"
               />
               Bootstrap
             </span>

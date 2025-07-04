@@ -48,7 +48,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary font-medium transition-colors duration-300"
+              className="text-foreground hover:text-primary font-medium transition-colors duration-300"
             >
               {item.name}
             </a>

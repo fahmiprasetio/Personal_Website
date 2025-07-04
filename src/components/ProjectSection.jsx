@@ -17,7 +17,7 @@ const Projects = [
     description:
       "A recommendation platform that helps users compare and discover the best laptops, phones, and other tech products available to the public.",
     video: "/projects/tech-sentinel.mp4",
-    tags: ["ReactJS", "TailwindCSS", "Node.js"],
+    tags: ["ReactJS", "Tailwind CSS", "Node.js"],
     demoUrl: "http://tech-sentinel-website-review-tech.vercel.app",
     githubUrl:
       "https://github.com/fahmiprasetio/TechSentinel-Tech-Review-Website",
@@ -32,6 +32,16 @@ const Projects = [
     demoUrl: "https://aksara-suara-oa4c.vercel.app/",
     githubUrl: "https://github.com/fahmiprasetio/Aksara_Suara",
   },
+  {
+    id: 4,
+    title: "Personal Portofolio Website",
+    description:
+      "A personal portfolio website showcasing my professional background, skills, and a curated selection of projects I have developed.",
+    video: "/projects/personal_website.mp4",
+    tags: ["ReactJS", "Tailwind CSS", "Javascript"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/fahmiprasetio/Personal_Website",
+  },
 ];
 
 export const ProjectSection = () => {
@@ -43,14 +53,17 @@ export const ProjectSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Here are some of my recent projects, thoughtfully built with a strong focus on performance, accessibility, and user experience. Each project not only showcases my progress in web development but also reflects my creativity and attention to visual detail.
+          Here are some of my recent projects, thoughtfully built with a strong
+          focus on performance, accessibility, and user experience. Each project
+          not only showcases my progress in web development but also reflects my
+          creativity and attention to visual detail.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {Projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover border"
+              className="group bg-card rounded-lg overflow-hidden shadow-xl card-hover border"
             >
               <div className="h-48 overflow-hidden">
                 <video

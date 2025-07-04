@@ -135,7 +135,7 @@
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl;
 }
 
 @utility gradient-border {
@@ -167,3 +167,14 @@
   padding: 0;
   text-align: center;
 }
+
+.icon-invert-dark {
+  filter: invert(0);
+}
+
+.dark .icon-invert-dark {
+  filter: invert(1);
+}
+
+  
+  
