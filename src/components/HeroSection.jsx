@@ -29,7 +29,7 @@ export const HeroSection = () => {
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex items-center justify-center gap-3">
             <a
               href="#project"
-              className="cosmic-button rounded-xl py-3 hover:scale-102 inline-block w-60"
+              className="cosmic-button rounded-xl py-3 hover:scale-102 inline-block w-60 sm:text-md"
             >
               View My Project
             </a>
