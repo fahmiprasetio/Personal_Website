@@ -18,11 +18,11 @@ export const ExperienceSection = () => {
               {/* Card 1 */}
               <div className="relative bg-card border border-muted rounded-xl py-6 px-8 shadow-lg">
                 <div className="flex justify-between items-center mb-3">
-                  <h4 className="font-semibold text-glow">
+                  <h4 className="font-semibold text-glow text-left">
                     UFO Veteran Jakarta - Graphic Design
                   </h4>
                   <span className="text-xs font-semibold bg-primary text-background px-2 py-1 rounded-full">
-                    2023 - 2024
+                    2023
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground text-justify">
@@ -38,7 +38,7 @@ export const ExperienceSection = () => {
               {/* Card 2 */}
               <div className="relative bg-card border border-muted rounded-xl py-6 px-8 shadow-lg">
                 <div className="flex justify-between items-center mb-3">
-                  <h4 className="font-semibold text-glow">
+                  <h4 className="font-semibold text-glow text-left">
                     KSM Multimedia - UI/UX Design
                   </h4>
                   <span className="text-xs font-semibold bg-primary text-background px-2 py-1 rounded-full">
@@ -54,11 +54,11 @@ export const ExperienceSection = () => {
               {/* Card 3 */}
               <div className="relative bg-card border border-muted rounded-xl py-6 px-8 shadow-lg">
                 <div className="flex justify-between items-center mb-3">
-                  <h4 className="font-semibold text-glow">
+                  <h4 className="font-semibold text-glow text-left">
                     KSM Android - Front End Web Developer
                   </h4>
                   <span className="text-xs font-semibold bg-primary text-background px-2 py-1 rounded-full">
-                    2024 - present
+                    2024
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground text-justify">
@@ -85,17 +85,17 @@ export const ExperienceSection = () => {
                     2018–2023
                   </span>
                   {/* nama sekolah */}
-                  <h4 className="text-xl text-glow font-semibold">
+                  <h4 className="text-md md:text-xl text-glow font-semibold text-left">
                     SMK Negeri 1 Temanggung
                   </h4>
                   {/* jurusan */}
-                  <span className="inline-block text-md font-semibold ">
+                  <span className="inline-block text-md font-semibold text-left">
                     Analytical Chemistry
                   </span>
                 </div>
 
                 {/* kanan */}
-                <div className="w-50 h-44 rounded-md overflow-hidden">
+                <div className="w-45 h-40 md:w-50 md:h-44 rounded-md overflow-hidden">
                   <img
                     src="/projects/smkn-1-tmg.jpg"
                     alt="SMK Negeri 1 Temanggung Logo"
@@ -110,16 +110,16 @@ export const ExperienceSection = () => {
                   <span className="bg-card border-1 border-white text-white text-xs mb-5 font-semibold px-2 py-0.5 rounded-md">
                     2023 - Present
                   </span>
-                  <h4 className="text-xl text-glow font-semibold">
+                  <h4 className="text:md md:text-xl text-glow font-semibold text-left">
                     UPN Veteran Jakarta
                   </h4>
-                  <span className="inline-block text-sm text-left font-semibold ">
+                  <span className="inline-block text-sm text-left font-semibold text-left">
                     Computer Science - Information System
                   </span>
                 </div>
 
                 {/* kanan */}
-                <div className="w-50 h-44 rounded-md overflow-hidden">
+                <div className="w-55 h-40 md:w-50 md:h-44 rounded-md overflow-hidden">
                   <img
                     src="/projects/upnvj.jpg"
                     alt="SMK Negeri 1 Temanggung Logo"
@@ -135,75 +135,75 @@ export const ExperienceSection = () => {
         <div className="mt-20">
           <h3 className="text-4xl font-bold mb-4">Tech <span className="text-primary">Stack</span></h3>
           <div className="flex flex-wrap mx-auto justify-center  gap-4">
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/reactjs.svg"
                 alt="React"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               React
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/tailwind.svg"
                 alt="Tailwind CSS"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               Tailwind CSS
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/mysql.svg"
                 alt="MySQL"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               MySQL
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/nodejs.svg"
                 alt="Node JS"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               NodeJS
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/javascript.svg"
                 alt="JavaScript"
-                className="h-7 w-7 icon-invert-dark"
+                className="w- h-5 md:h-7 md:w-7 icon-invert-dark"
               />
               JavaScript
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/github.svg"
                 alt="GitHub"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               GitHub
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/git.svg"
                 alt="Git"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               Git
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/vercel.svg"
                 alt="Vercel"
-                className="h-7 w-7 icon-invert-dark"
+                className="w- h-5 md:h-7 md:w-7 icon-invert-dark"
               />
               Vercel
             </span>
-            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-xl">
+            <span className="flex items-center gap-2 border-2 border-primary px-4 py-1.5 rounded-full text-sm md:text-xl">
               <img
                 src="/projects/bootstrap.svg"
                 alt="Bootstrap"
-                className="h-9 w-9 icon-invert-dark"
+                className="h-6 w-6 md:h-9 md:w-9 icon-invert-dark"
               />
               Bootstrap
             </span>

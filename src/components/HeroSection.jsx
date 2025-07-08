@@ -20,7 +20,7 @@ export const HeroSection = () => {
               Prasetio
             </span>
           </h1>
-          <p className="text-xs md:text-xl lg:text-xl text-muted-foreground max-w-6xl mx-auto opacity-0 animate-fade-in-delay-3">
+          <p className="text-md md:text-xl lg:text-xl text-muted-foreground max-w-6xl mx-auto opacity-0 animate-fade-in-delay-3">
             I transform complex problems into simple, meaningful, and effective
             web solutions, delivering clarity and impact through thoughtful,
             user-centered design.
@@ -29,7 +29,7 @@ export const HeroSection = () => {
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex items-center justify-center gap-3 -mt-4 md:mt-6">
             <a
               href="#project"
-              className="cosmic-button w-60 max-w-xs !text-md sm:!text-xl rounded-xl py-2.5 hover:scale-102 inline-block text-center"
+              className="cosmic-button w-60 max-w-xs !text-sm md:!text-xl rounded-xl py-2.5 hover:scale-102 inline-block text-center"
             >
               View My Project
             </a>
