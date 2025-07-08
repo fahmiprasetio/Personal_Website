@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -24,25 +23,26 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed w-full z-40 px-10">
+    <nav className="fixed top-0 w-full z-40 px-4">
+      {/* Navbar Container */}
       <div
-        className={cn(
-          "transition-all duration-500 ease-in-out mx-auto flex items-center justify-between px-4",
+        className={`transition-all duration-500 ease-in-out mx-auto flex items-center justify-between px-4 ${
           isScrolled
-            ? "max-w-3xl pl-4 py-3 mt-3 rounded-xl  bg-primary/20 backdrop-blur-lg shadow-lg"
+            ? "max-w-3xl py-3 mt-3 rounded-xl bg-primary/20 backdrop-blur-lg shadow-lg"
             : "max-w-6xl py-5"
-        )}
+        }`}
       >
+        {/* Logo */}
         <a
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> Fahmi </span> Prasetio
+            <span className="text-glow text-foreground">Fahmi</span> Prasetio
           </span>
         </a>
 
-        {/* desktop version */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
             <a
@@ -55,26 +55,23 @@ export const Navbar = () => {
           ))}
           <ThemeToggle />
         </div>
+      </div>
 
-        {/* mobile version */}
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-        </button>
+      {/* Toggle Button (positioned outside the navbar container) */}
+      <button
+        onClick={() => setIsMenuOpen((prev) => !prev)}
+        className={`md:hidden p-2 text-foreground z-50 transition-all duration-300 ${
+          isMenuOpen ? "fixed top-4.5 right-4" : "absolute top-4.5 right-4"
+        }`}
+        aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+      >
+        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
-        <div
-          className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <div className="flex flex-col space-y-8 text-xl">
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-md w-full h-screen flex flex-col items-center justify-center transition-all duration-300 md:hidden">
+          <div className="flex flex-col space-y-8 text-xl mt-10">
             {navItems.map((item, key) => (
               <a
                 key={key}
@@ -87,7 +84,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

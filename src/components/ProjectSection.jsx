@@ -52,7 +52,7 @@ export const ProjectSection = () => {
           Website<span className="text-primary"> Project</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-xs ext-muted-foreground mb-12 max-w-3xl mx-auto">
           Here are some of my recent projects, thoughtfully built with a strong
           focus on performance, accessibility, and user experience. Each project
           not only showcases my progress in web development but also reflects my
