@@ -111,7 +111,7 @@ export const ContactSection = () => {
               <a href="https://www.linkedin.com/in/fahmi-prasetio/" target="_blank">
                 <Linkedin size={30}/>
               </a>
-              <a href="https://instagram.com/fahmi.prasetio_" target="_blank"  >
+              <a href="https://www.instagram.com/fahmi.prasetio_/" target="_blank"  >
                 <Instagram size={30}/>
               </a>
               <a href="https://x.com/FahmiPrasetiio" target="_blank">
