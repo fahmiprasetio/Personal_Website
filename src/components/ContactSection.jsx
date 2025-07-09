@@ -108,13 +108,13 @@ export const ContactSection = () => {
               Connect With Me
             </h3>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/in/fahmi-prasetio/" target="_blank">
                 <Linkedin size={30}/>
               </a>
-              <a href="https://instagram.com" target="_blank"  >
+              <a href="https://instagram.com/fahmi.prasetio_" target="_blank"  >
                 <Instagram size={30}/>
               </a>
-              <a href="https://x.com" target="_blank">
+              <a href="https://x.com/FahmiPrasetiio" target="_blank">
                 <Twitter size={32}/>
               </a>
             </div>
